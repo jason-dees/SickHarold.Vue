@@ -41,8 +41,8 @@ export default {
         return {
             sheet: new GoogleSheet("1aPX6QcZWpaDF2gmFbbsjeb_MLoNB-2PThIf9neDdAJ8", 1),
             results: [],
-            sortCol: null,
-            sortOrder: "asc",
+            sortCol: 'dateTime',
+            sortOrder: "desc",
             filter: null
         };
     },
@@ -62,7 +62,7 @@ export default {
                     info: row.info
                 }
             }
-            self.results = map(self.sheet.results, mapFn);
+            self.results = orderBy(map(self.sheet.results, mapFn), [self.sortCol], [self.sortOrder]);
         });
     },
     methods: {
