@@ -10,7 +10,7 @@
   "dependencies": {
     "@aspnet/signalr": "^1.1.4",
     "core-js": "^2.6.11",
-    "lodash": "^4.17.19",
+    "lodash": "^4.17.21",
     "moment": "^2.27.0",
     "popper.js": "^1.16.1",
     "vue": "^2.6.11",
@@ -24,7 +24,7 @@
     "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.0.0",
     "expose-loader": "^0.7.5",
-    "node-sass": "^4.14.1",
+    "node-sass": "^7.0.0",
     "sass-loader": "^7.3.1",
     "style-loader": "^0.23.1",
     "vue-template-compiler": "^2.6.11"
